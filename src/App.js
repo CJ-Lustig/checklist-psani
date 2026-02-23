@@ -53,8 +53,6 @@ export default function App() {
   days.forEach(d => routineSteps.forEach(s => { initialChecked[`${d}-${s.id}`] = false; }));
   const [checked, setChecked] = useState(initialChecked);
   const [activeDay, setActiveDay] = useState("Po");
-  const [socialMinutes, setSocialMinutes] = useState(90);
-  const [writingMinutes, setWritingMinutes] = useState(0);
   const [showTips, setShowTips] = useState(false);
 
   const toggle = (stepId) => {
